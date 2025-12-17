@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Приєднатись до нас</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #f7c1c1, #e0e8f9);
+    }
+
+    .join-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      padding: 40px 50px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 26px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 15px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    fieldset {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    legend {
+      font-weight: 600;
+      color: #8a5cf0;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    label {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      margin-top: 5px;
+      text-align: left;
+    }
+
+    .checkbox-group label {
+      font-size: 13px;
+      font-weight: 400;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .checkbox-group input {
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+    }
+
+    button {
+      background-color: #8a5cf0;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button:hover {
+      background-color: #7248d1;
+      box-shadow: rgba(138, 92, 240, 0.3);
+    }
+
+    @media (max-width: 999px) {
+      .join-container {
+        padding: 30px 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="join-container">
+    <h1>Приєднатись до нас</h1>
+    <p>Заповніть форму, щоб ми могли з вами зв'язатись 💬</p>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Контактна інформація</legend>
+
+        <div class="form-group">
+          <label for="name">Ім'я</label>
+          <input type="text" id="name" name="name" placeholder="Введіть ваше ім'я" required>
+        </div>
+
+        <div class="form-group">
+          <label for="surname">Прізвище</label>
+          <input type="text" id="surname" name="surname" placeholder="Введіть ваше прізвище" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Електронна пошта</label>
+          <input type="email" id="email" name="email" placeholder="Введіть вашу пошту" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Повідомлення</label>
+          <textarea id="message" name="message" rows="3" placeholder="Напишіть щось (необов'язково)"></textarea>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">Я підтверджую згоду на обробку моїх персональних даних</label>
+        </div>
+
+      </fieldset>
+
+      <button type="submit">Надіслати</button>
+    </form>
+  </div>
+</body>
+</html>

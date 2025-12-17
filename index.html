@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Kids Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+      <div class="logo">🌈 Happy Kids Club</div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+    <label for="menu-toggle" class="burger-img">
+    <img src="images/burger.png" alt="Меню">
+    </label>
+       <nav>
+         <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#groups">Гуртки</a></li>
+            <li><a href="#schedule">Розклад</a></li>
+            <li><a href="#events">Наші події</a></li>
+         </ul>
+       </nav>
+
+    <div class="contacts">
+        <div class="icons">
+            <a href="#"><img src="images/telegram.png" alt="Telegram"></a>
+            <a href="#"><img src="images/viber.png" alt="Viber"></a>
+            <a href="#"><img src="images/phone-call.png" alt="Телефон"></a>
+        </div>
+        <p>067 401 8165</p>
+    </div>
+
+</header>
+    <main>  
+    <section id="home" class="hero">
+
+    <video class="hero-video" poster="images/bg.jpg" autoplay muted loop>
+        <source src="video/bg.mp4" type="video/mp4">
+    </video>
+    <div class="content-box">
+        <h1>Happy Kids Club</h1>
+        <p>Простір розвитку та творчості для дітей від 9 місяців</p>
+        <button onclick="window.location.href='join.html'">Хочу до вас</button>
+     </div>
+    </section>
+
+    
+    <section id="about" class="about">
+        <div class="info-card"><h1>ДОСВІД</h1> <p> 19 років</p> </div>
+        <div class="info-card"><h1>>10000</h1> <p> дітей обирають наші гуртки</p> </div>
+        <div class="info-card"><h1>ЛІЦЕНЗІЯ</h1> <p>100 професійних працівників</p> </div>
+        <div class="info-card"><h1>СТАТУС</h1> <p>Центр творчості та розвитку для дітей</p> </div>
+        <div class="info-card"><h1>НАШІ ПОСЛУГИ</h1> <p>Розвиткові заняття для малюків від 9 місяців, дитячий садок та гуртки за інтересами, літні табори для дітей та програми для освітян.</p> </div>
+        <div class="info-card"><h1>ВІДГУКИ</h1> <p>У нас дуже багато позитивних відгуків! Батьки та діти залишаються задоволені кожним заняттям</p> </div>
+
+
+    </section>
+
+   <section id="groups" class="groups">
+    <h2>Гуртки</h2>
+    <p>У Happy Kids Club ми пропонуємо різноманітні гуртки для розвитку дітей: 
+        <p> Плавання – розвиток фізичних навичок та здоров’я.</p>
+        <p> Малювання – творчість та фантазія без меж.</p> 
+        <p> Співи – музичний розвиток та ритміка.</p>
+        <p> Танці – активні рухи та веселі заняття.</p> 
+        <p> Репетитори – допомога з навчанням та розвиток інтелекту.</p> 
+        <p> Футбол – командні ігри та спорт.</p> 
+        <p> Волейбол – командні та рухливі ігри.</p>
+        <p> Логіка – розвиваючі ігри, тренування мислення та концентрації.</p>
+    <section id="groups" class="groups">
+    <div class="groups-list">
+        <div class="group-item">
+            <img src="images/swimming.jpg">
+            <p>Плавання</p>
+        </div>
+        <div class="group-item">
+            <img src="images/drawing.jpg">
+            <p>Малювання</p>
+        </div>
+        <div class="group-item">
+            <img src="images/dancing.jpg">
+            <p>Танці</p>
+        </div>
+        <div class="group-item">
+            <img src="images/logic.jpg">
+            <p>Логіка</p>
+        </div>
+
+        <div class="group-item">
+            <img src="images/football.jpg">
+            <p>Футбол</p>
+        </div>
+        <div class="group-item">
+            <img src="images/volleyball.jpg">
+            <p>Волейбол</p>
+        </div>
+        <div class="group-item">
+            <img src="images/singing.jpg">
+            <p>Співи</p>
+        </div>
+        <div class="group-item">
+            <img src="images/tutor.jpg">
+            <p>Репетитори</p>
+        </div>
+    </div>
+</section>
+
+<section class="pricing" id="pricing">
+    <h2>Наші ціни</h2>
+
+    <div class="pricing-container">
+
+        <div class="price-card">
+            <h3>Базовий</h3>
+            <p class="price">300 грн/заняття</p>
+            <p>1 заняття на вибір</p>
+            <p>Група до 10 дітей</p>
+            <button onclick="window.location.href='join.html'">Хочу спробувати</button>
+        </div>
+
+        <div class="price-card">
+            <h3>Стандарт</h3>
+            <p class="price">1100 грн/місяць</p>
+            <p>4 заняття</p>
+            <p>Індивідуальний супровід</p>
+            <button onclick="window.location.href='join.html'">Хочу спробувати</button>
+        </div>
+
+        <div class="price-card">
+            <h3>Преміум</h3>
+            <p class="price">2500 грн/місяць</p>
+            <p>8 занять</p>
+            <p>Розширена програма</p>
+            <button onclick="window.location.href='join.html'">Хочу спробувати</button>
+        </div>
+
+    </div>
+</section>
+    <section id="schedule" class="schedule">
+        <h2>Розклад</h2>
+        <img src="images/calendar.png" alt="Календар занять">
+        <p>У Happy Kids Club заняття проходять за гнучким графіком, щоб кожна дитина могла знайти свій гурток.
+        <p>Плавання: Пн-Ср-Пт, 10:00–11:00</p>
+        <p>Малювання: Вт-Чт, 11:30–12:30</p>
+        <p>Співи: Пн-Ср, 13:00–14:00</p>
+        <p>Танці: Вт-Чт, 14:30–15:30</p>
+        <p>Репетитори: Пн-Пт, 15:30–16:30</p>
+        <p>Футбол: Пн-Ср-Пт, 16:30–17:30</p>
+        <p>Волейбол: Вт-Чт, 17:00–18:00</p>
+        <p>Логіка: Сб, 10:00–12:00</p>
+    </section>
+
+  
+    <section id="events" class="events">
+        <h2>Наші події</h2>
+        <p>У Happy Kids Club завжди відбувається щось цікаве! Ми організовуємо свята, концерти, табори та виставки дитячих робіт. Наша футбольна команда брала участь у міському турнірі та посіла II місце, а волейбольна команда виборола III місце. Це гордість для дітей, батьків і всього клубу!</p>
+        <div class="event-photos">
+            <img src="images/event1.jpg" alt="Подія 1">
+            <img src="images/event2.jpg" alt="Подія 2">
+        </div>
+    </section>
+    </main> 
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <p>🌈 Happy Kids Club<p>
+        </div>
+
+        <div class="footer-column">
+            <p>📍 м. Львів, вул. Шевченка, 44а</p>
+            <p>📞 067 401 8165</p>
+            <p>Happy Kids Club © 2025</p>
+         <div class="img-for-footer">
+            <img src="images/visamastercard.jpg" alt="Значок мастеркард"  class="payment-img">
+         </div>
+        </div>
+
+        <div class="footer-column">
+            <p> Happy Kids Club Shop</p>
+            <p> FAQ </p>
+        </div>
+    </div>    
+</footer>
+
+</body>
+</html>
